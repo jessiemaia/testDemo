@@ -26,7 +26,7 @@ public class RecipeService {
 
     public List<Recipe> getVeganRecipes() {
         return recipeRepository.findAll().stream()
-                .filter(Recipe::getIsVegan)
+                .filter(Recipe::isVegan)
                 .collect(Collectors.toList());
     }
 }

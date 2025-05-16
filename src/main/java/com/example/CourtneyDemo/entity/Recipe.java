@@ -18,5 +18,6 @@ public class Recipe {
     private String name;
 
     @Column(name = "ISVEGAN")
-    private Boolean isVegan;
+    private boolean isVegan;
+
 }
